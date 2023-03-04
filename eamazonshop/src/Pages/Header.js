@@ -1,12 +1,12 @@
 import React from 'react';
-import "./Header.css";
+import "../CSS/Header.css";
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import SearchIcon from '@material-ui/icons/Search';
 import { Link } from "react-router-dom";
 
 
-function Header() {
+function Header(props) {
   return (
     <div className = "header">
       <Link to ="/" style={{ textDecoration:"none" }}>
@@ -33,7 +33,7 @@ function Header() {
         <Link to="/Checkout" style={{ textDecoration:"none" }}>
           <div className="nav_item">
             <ShoppingBasketIcon>Basket</ShoppingBasketIcon>
-            <span className="nav_itemLineTwo nav_BasketCount">0</span>
+            <span className="nav_itemLineTwo nav_BasketCount">({props.cart})</span>
           </div>
         </Link>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Row, Form, Button,Modal } from 'react-bootstrap';
-import './Login.css';
+import '../CSS/Login.css';
 // import { signup } from "../Service/ClientService";
 
 export default function SignUp(props) {
